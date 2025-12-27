@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abia State Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-neutral-950 text-neutral-100">
+    <!-- ================= NAVBAR ================= -->
+    <header
+      class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur border-b border-neutral-800"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-2xl font-extrabold tracking-wide">
+          ABIA<span class="text-amber-400">ARCHIVE</span>
+        </a>
+
+        <ul class="hidden md:flex gap-10 text-neutral-300 font-medium">
+          <li>
+            <a href="index.html" class="hover:text-white transition-all"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="history.html" class="hover:text-white transition-all"
+              >History</a
+            >
+          </li>
+          <li>
+            <a href="politics.html" class="hover:text-white transition-all"
+              >Politics</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-white transition-all"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="history.html"
+          class="px-6 py-3 bg-amber-500 text-black rounded-lg font-semibold hidden md:block hover:bg-amber-600 transition-all"
+        >
+          Explore Archive
+        </a>
+      </nav>
+    </header>
+
+    <!-- NAV SPACER -->
+    <div class="h-24"></div>
+
+    <!-- ================= SLIDER ================= -->
+    <section class="relative w-full h-[750px] overflow-hidden">
+      <!-- SLIDE 1 -->
+      <div class="slide absolute inset-0 hidden">
+        <div
+          class="w-full h-full bg-[url('/Project/src/Images/Hero.jpg')] bg-cover bg-center relative"
+        >
+          <div class="absolute inset-0 bg-black/70"></div>
+          <div
+            class="absolute left-16 bottom-32 text-white font-serif max-w-[600px]"
+          >
+            <h1 class="text-6xl font-extrabold leading-tight drop-shadow-lg">
+              Welcome to Abia State
+            </h1>
+            <p class="mt-5 text-2xl leading-relaxed drop-shadow">
+              Discover the cultural heritage and beautiful landscape of God’s
+              Own State.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide absolute inset-0 hidden">
+        <div
+          class="w-full h-full bg-[url('/Project/src/Images/Hero2.jpg')] bg-cover bg-center relative"
+        >
+          <div class="absolute inset-0 bg-black/70"></div>
+          <div
+            class="absolute left-16 bottom-32 text-white font-serif max-w-[600px]"
+          >
+            <h1 class="text-6xl font-extrabold leading-tight drop-shadow-lg">
+              Land of Possibilities
+            </h1>
+            <p class="mt-5 text-2xl leading-relaxed drop-shadow">
+              Abia State is home to industries, creativity and craftsmanship.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="slide absolute inset-0 hidden">
+        <div
+          class="w-full h-full bg-[url('/Project/src/Images/Umu.jpg')] bg-cover bg-center relative"
+        >
+          <div class="absolute inset-0 bg-black/70"></div>
+          <div
+            class="absolute left-16 bottom-32 text-white font-serif max-w-[600px]"
+          >
+            <h1 class="text-6xl font-extrabold leading-tight drop-shadow-lg">
+              Umuahia City
+            </h1>
+            <p class="mt-5 text-2xl leading-relaxed drop-shadow">
+              A peaceful capital known for agriculture, education, and rich
+              hospitality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      let index = 0;
+
+      function showSlide(n) {
+        slides.forEach((slide) => slide.classList.add("hidden"));
+        slides[n].classList.remove("hidden");
+      }
+
+      setInterval(() => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      }, 4000);
+
+      showSlide(index);
+    </script>
+
+    <!-- ================= KEY CONTENT ================= -->
+    <section class="p-10">
+      <div class="flex flex-col items-center text-center mb-10">
+        <h1 class="text-4xl font-serif font-bold text-white">Key Content</h1>
+        <p class="text-neutral-300 mt-2 max-w-[650px]">
+          Explore major aspects of Abia State — from its deep cultural heritage
+          to its political structure and economic power.
+        </p>
+        <hr class="w-20 border-2 mt-4 border-amber-400" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div
+          class="bg-neutral-800 p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center"
+        >
+          <i class="bi bi-book text-5xl text-amber-400"></i>
+          <h2 class="text-xl font-bold mt-4 text-white">Abia State History</h2>
+          <p class="text-neutral-300 mt-2">
+            Learn about the creation of Abia State in 1991 and its historical
+            journey.
+          </p>
+          <a
+            href="history.html"
+            class="inline-block mt-4 text-amber-400 font-semibold hover:underline"
+            >Read More →</a
+          >
+        </div>
+
+        <div
+          class="bg-neutral-800 p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center"
+        >
+          <i class="bi bi-people text-5xl text-amber-400"></i>
+          <h2 class="text-xl font-bold mt-4 text-white">
+            Culture & Traditions
+          </h2>
+          <p class="text-neutral-300 mt-2">
+            Explore traditions, festivals, craftsmanship, and the rich Igbo
+            heritage.
+          </p>
+          <a
+            href="culture.html"
+            class="inline-block mt-4 text-amber-400 font-semibold hover:underline"
+            >Learn More →</a
+          >
+        </div>
+
+        <div
+          class="bg-neutral-800 p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center"
+        >
+          <i class="bi bi-bank text-5xl text-amber-400"></i>
+          <h2 class="text-xl font-bold mt-4 text-white">
+            Government & Leadership
+          </h2>
+          <p class="text-neutral-300 mt-2">
+            Meet leaders, ministries, and the political structure of the state.
+          </p>
+          <a
+            href="politics.html"
+            class="inline-block mt-4 text-amber-400 font-semibold hover:underline"
+            >Explore →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MORE STORIES ================= -->
+    <section class="p-10 space-y-24">
+      <!-- HISTORY SNAPSHOT -->
+      <div class="bg-neutral-800 p-10 rounded-2xl shadow-xl">
+        <h2 class="text-3xl font-bold text-amber-400 mb-4">
+          A Journey Through Time
+        </h2>
+        <p class="text-neutral-300 mb-4">
+          Abia State was carved out of the old Imo State in 1991, but its
+          history stretches back to ancient Igbo settlements. The Ngwa, Ohafia,
+          and Arochukwu clans shaped the region through trade, governance, and
+          warfare. Communities lived in harmony with the land, relying on
+          agriculture, craftsmanship, and trade networks that extended beyond
+          present-day Nigeria.
+        </p>
+        <p class="text-neutral-300 mb-4">
+          Today, these historical roots influence modern identity, with
+          traditions, festivals, and communal values still thriving in villages
+          and towns.
+        </p>
+        <a
+          href="history.html"
+          class="text-amber-400 font-semibold hover:underline"
+          >Read More →</a
+        >
+      </div>
+
+      <!-- CULTURAL HIGHLIGHT -->
+      <div class="bg-neutral-800 p-10 rounded-2xl shadow-xl">
+        <h2 class="text-3xl font-bold text-amber-400 mb-4">
+          Cultural Riches & Festivals
+        </h2>
+        <p class="text-neutral-300 mb-4">
+          Abia is alive with festivals, masquerades, and traditional ceremonies.
+          The New Yam Festival celebrates harvest and community spirit, while
+          masquerades preserve spiritual and moral teachings. Local music,
+          dance, and crafts tell stories that connect past and present
+          generations.
+        </p>
+        <p class="text-neutral-300 mb-4">
+          These cultural practices are living archives of Abia’s identity and
+          creativity.
+        </p>
+        <a
+          href="culture.html"
+          class="text-amber-400 font-semibold hover:underline"
+          >Learn More →</a
+        >
+      </div>
+
+      <!-- POLITICAL INSIGHT -->
+      <div class="bg-neutral-800 p-10 rounded-2xl shadow-xl">
+        <h2 class="text-3xl font-bold text-amber-400 mb-4">
+          Governance & Leadership
+        </h2>
+        <p class="text-neutral-300 mb-4">
+          Abia’s political landscape blends modern governance and traditional
+          leadership structures. From the Governor to local councils, leaders
+          influence economy, infrastructure, and social welfare. Understanding
+          this helps residents and visitors appreciate how policies shape the
+          state’s growth.
+        </p>
+        <p class="text-neutral-300 mb-4">
+          Leaders like the Chief Judge and State Assembly members uphold
+          justice, representation, and development, continuing a legacy of
+          community-focused leadership.
+        </p>
+        <a
+          href="politics.html"
+          class="text-amber-400 font-semibold hover:underline"
+          >Explore →</a
+        >
+      </div>
+
+      <!-- ECONOMIC/INDUSTRIAL STORY -->
+      <div class="bg-neutral-800 p-10 rounded-2xl shadow-xl">
+        <h2 class="text-3xl font-bold text-amber-400 mb-4">
+          Aba: Industrial Powerhouse
+        </h2>
+        <p class="text-neutral-300 mb-4">
+          Aba’s markets are a symbol of ingenuity and enterprise. From
+          leatherworks to garment production, local artisans have built a
+          thriving economy that attracts buyers and traders from across Nigeria.
+          Knowledge and skills are passed through apprenticeships, sustaining a
+          culture of innovation and self-reliance.
+        </p>
+        <p class="text-neutral-300 mb-4">
+          The entrepreneurial spirit in Aba reflects Abia’s resilience,
+          creativity, and global relevance in small-scale industrial
+          development.
+        </p>
+        <a
+          href="history.html#Aba"
+          class="text-amber-400 font-semibold hover:underline"
+          >Read More →</a
+        >
+      </div>
+
+      <!-- EDUCATION & TECHRISE -->
+      <div class="bg-neutral-800 p-10 rounded-2xl shadow-xl">
+        <h2 class="text-3xl font-bold text-amber-400 mb-4">
+          Abia TechRise: Shaping the Future
+        </h2>
+        <p class="text-neutral-300 mb-4">
+          TechRise represents Abia’s leap into the digital age. By training
+          youth in software development, digital entrepreneurship, and data
+          analysis, TechRise empowers the next generation to compete globally
+          while solving local challenges.
+        </p>
+        <p class="text-neutral-300 mb-4">
+          Cohorts engage in hands-on projects, mentorship programs, and
+          collaborative innovation, creating a strong ecosystem of tech-savvy
+          young leaders.
+        </p>
+        <p class="text-neutral-300 mb-4">
+          TechRise bridges Abia’s rich entrepreneurial past with modern
+          technology, ensuring the state remains a hub of creativity, skills,
+          and innovation.
+        </p>
+        <a
+          href="techrise.html"
+          class="text-amber-400 font-semibold hover:underline"
+          >Discover More →</a
+        >
+      </div>
+
+      <!-- MODERN ACHIEVEMENTS -->
+      <div class="bg-neutral-800 p-10 rounded-2xl shadow-xl">
+        <h2 class="text-3xl font-bold text-amber-400 mb-4">
+          Modern Abia: Education & Innovation
+        </h2>
+        <p class="text-neutral-300 mb-4">
+          Beyond TechRise, Abia has invested in education, healthcare, and
+          technology hubs, fostering innovation across sectors. Universities,
+          research centers, and vocational institutes provide platforms for
+          knowledge transfer and skill acquisition.
+        </p>
+        <p class="text-neutral-300 mb-4">
+          Young entrepreneurs use these resources to create startups, improve
+          agriculture, enhance trade logistics, and develop software solutions,
+          proving that Abia is no longer just a historical landmark—it is a
+          **living hub of progress**.
+        </p>
+        <a
+          href="about.html#innovation"
+          class="text-amber-400 font-semibold hover:underline"
+          >Learn More →</a
+        >
+      </div>
+    </section>
+    <!-- ================= GOVERNOR SPOTLIGHT ================= -->
+    <section class="py-28 bg-neutral-900">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Governor Image -->
+        <div class="flex justify-center">
+          <img
+            src="/Project//src/Images/Govonor.jpg"
+            alt="Governor of Abia State"
+            class="rounded-3xl shadow-2xl w-full max-w-sm object-cover"
+          />
+        </div>
+
+        <!-- Governor Story -->
+        <div class="text-neutral-300">
+          <h2 class="text-5xl font-bold text-amber-400 mb-6">
+            Governor of Abia State
+          </h2>
+          <p class="mb-4">
+            The Governor of Abia State leads the executive arm of government,
+            responsible for policy, development, and governance across the
+            state. A strong commitment to public service, infrastructure, and
+            technology-driven programs has marked his administration.
+          </p>
+          <p class="mb-4">
+            Under his leadership, initiatives like educational reform,
+            healthcare expansion, and digital innovation through platforms such
+            as Abia TechRise have taken root. His vision emphasizes both the
+            preservation of Abia’s rich cultural heritage and the advancement of
+            the state into a modern, globally competitive economy.
+          </p>
+          <p class="mb-4">
+            Residents continue to look to the governor for transparent
+            leadership, sustainable development, and programs that empower
+            youth, women, and local businesses.
+          </p>
+          <a
+            href="politics.html"
+            class="text-amber-400 font-semibold hover:underline mt-4 inline-block"
+          >
+            Learn More →
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ================= IC OF LEARNFACTORY SPOTLIGHT ================= -->
+    <section class="py-28 bg-neutral-950">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- IC Story -->
+        <div class="text-neutral-300 order-2 md:order-1">
+          <h2 class="text-5xl font-bold text-amber-400 mb-6">
+            IC of LearnFactory
+          </h2>
+          <p class="mb-4">
+            The IC (In-Charge) of LearnFactory oversees the operations of this
+            innovative digital education hub, focused on empowering Abia youth
+            with technology, digital skills, and entrepreneurship training.
+          </p>
+          <p class="mb-4">
+            Under his leadership, LearnFactory has launched specialized cohorts,
+            mentorship programs, and real-world projects that give students
+            hands-on experience in coding, data analysis, and product design.
+            The emphasis is on producing graduates who can thrive in Nigeria’s
+            digital economy and beyond.
+          </p>
+          <p class="mb-4">
+            His vision combines education, technology, and social impact,
+            ensuring that LearnFactory is more than just a training center —
+            it’s a platform for youth innovation, career growth, and community
+            transformation.
+          </p>
+          <a
+            href="techrise.html#IC"
+            class="text-amber-400 font-semibold hover:underline mt-4 inline-block"
+          >
+            Learn More →
+          </a>
+        </div>
+
+        <!-- IC Image -->
+        <div class="flex justify-center order-1 md:order-2">
+          <img
+            src="/Project/src/Images/CEO.jpg"
+            alt="IC of LearnFactory"
+            class="rounded-3xl shadow-2xl w-full max-w-sm object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-black text-neutral-400 mt-10">
+      <div class="p-6 flex flex-col gap-5">
+        <div class="flex gap-10 justify-center text-xl">
+          <i class="bi bi-facebook hover:text-white transition-all"></i>
+          <i class="bi bi-twitter hover:text-white transition-all"></i>
+          <i class="bi bi-instagram hover:text-white transition-all"></i>
+          <i class="bi bi-google hover:text-white transition-all"></i>
+        </div>
+        <div class="flex gap-5 justify-center text-sm">
+          <a href="" class="hover:text-white transition-all">Join Us</a>
+          <a href="" class="hover:text-white transition-all">Contact Us</a>
+          <a href="" class="hover:text-white transition-all">Terms of Use</a>
+          <a href="" class="hover:text-white transition-all">Privacy Policy</a>
+          <a href="" class="hover:text-white transition-all"
+            >© TECH_HUB Official</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
