@@ -3,50 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Abia Archive</title>
-    <link rel="stylesheet" href="src/output.css" />
+    <title>Abia State Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
-  <body class="bg-black text-white">
-    <!-- HEADER -->
-    <header class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur border-b border-neutral-800">
-      <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+  <body class="bg-neutral-950 text-neutral-100">
+    <!-- ================= NAVBAR ================= -->
+    <header
+      class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur border-b border-neutral-800"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center relative"
+      >
         <a href="index.html" class="text-2xl font-extrabold tracking-wide">
           ABIA<span class="text-amber-400">ARCHIVE</span>
         </a>
-        <ul class="hidden md:flex gap-10 text-neutral-300 font-medium">
-          <li><a href="index.html" class="hover:text-white">Home</a></li>
-          <li><a href="history.html" class="hover:text-white">History</a></li>
-          <li><a href="politics.html" class="hover:text-white">Politics</a></li>
-          <li><a href="about.html" class="hover:text-white">About</a></li>
+
+        <!-- MENU BUTTON -->
+        <button id="menuBtn" class="md:hidden text-2xl">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- MENU -->
+        <ul
+          id="menu"
+          class="md:flex flex-col md:flex-row gap-10 text-neutral-300 font-medium absolute md:static top-full left-0 w-full md:w-auto bg-black md:bg-transparent px-6 md:px-0 max-h-0 md:max-h-none overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <li>
+            <a href="index.html" class="hover:text-white transition-all block">
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="history.html"
+              class="hover:text-white transition-all block"
+            >
+              History
+            </a>
+          </li>
+          <li>
+            <a
+              href="politics.html"
+              class="hover:text-white transition-all block"
+            >
+              Politics
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-white transition-all block">
+              About
+            </a>
+          </li>
+
+          <!-- MOBILE CTA -->
+          <li class="md:hidden pt-4">
+            <a
+              href="history.html"
+              class="block text-center px-6 py-3 bg-amber-500 text-black rounded-lg font-semibold hover:bg-amber-600 transition-all"
+            >
+              Explore Archive
+            </a>
+          </li>
         </ul>
-        <a href="history.html" class="px-6 py-3 bg-amber-500 text-black rounded-lg font-semibold hidden md:block">
+
+        <!-- DESKTOP CTA -->
+        <a
+          href="history.html"
+          class="px-6 py-3 bg-amber-500 text-black rounded-lg font-semibold hidden md:block hover:bg-amber-600 transition-all"
+        >
           Explore Archive
         </a>
       </nav>
     </header>
-
     <div class="pt-28"></div>
     <!-- spacing for fixed header -->
 
     <!-- HERO SECTION -->
     <section class="shadow-black shadow/50 py-16 text-center">
       <h1 class="text-5xl font-serif font-bold mb-3">About Abia Archive</h1>
-      <p class="text-2xl font-serif text-amber-400">Preserving the Heritage of God's Own State</p>
+      <p class="text-2xl font-serif text-amber-400">
+        Preserving the Heritage of God's Own State
+      </p>
     </section>
 
     <main class="max-w-7xl mx-auto px-6 py-10 flex flex-col gap-10">
       <!-- INTRODUCTION SECTION -->
       <section class="p-4">
-        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">Welcome to Abia Archive</h2>
+        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">
+          Welcome to Abia Archive
+        </h2>
         <hr class="border-neutral-600 mb-4" />
         <p class="text-white text-justify">
-          <span class="font-semibold text-amber-400">Abia Archive</span> is a digital platform dedicated to preserving, documenting, and celebrating the rich history, culture, and achievements of Abia State. Our goal is to make Abia’s heritage accessible to everyone—from students and researchers to curious individuals worldwide.
+          <span class="font-semibold text-amber-400">Abia Archive</span> is a
+          digital platform dedicated to preserving, documenting, and celebrating
+          the rich history, culture, and achievements of Abia State. Our goal is
+          to make Abia’s heritage accessible to everyone—from students and
+          researchers to curious individuals worldwide.
         </p>
         <p class="text-white text-justify mt-2">
-          Through carefully curated articles, images, and resources, Abia Archive showcases the stories of communities, notable figures, cultural practices, and economic developments that make Abia State unique. Behind this platform is a passionate team of researchers, developers, and mentors committed to bridging the past and the present using technology.
+          Through carefully curated articles, images, and resources, Abia
+          Archive showcases the stories of communities, notable figures,
+          cultural practices, and economic developments that make Abia State
+          unique. Behind this platform is a passionate team of researchers,
+          developers, and mentors committed to bridging the past and the present
+          using technology.
         </p>
         <p class="text-white text-justify mt-2">
-          Whether you are exploring Abia’s history for research, learning about its vibrant culture, or connecting with the people shaping its future, Abia Archive is your trusted guide and digital companion.
+          Whether you are exploring Abia’s history for research, learning about
+          its vibrant culture, or connecting with the people shaping its future,
+          Abia Archive is your trusted guide and digital companion.
         </p>
       </section>
 
@@ -55,44 +124,88 @@
         <h2 class="text-4xl font-serif font-bold mb-4">Mission & Vision</h2>
         <hr class="border-neutral-600 mb-4" />
         <p class="text-white mb-2">
-          Our mission is to provide accessible, accurate, and engaging information about Abia State’s history, leaders, and communities. We aim to educate, inspire, and promote cultural pride among residents and the global audience.
+          Our mission is to provide accessible, accurate, and engaging
+          information about Abia State’s history, leaders, and communities. We
+          aim to educate, inspire, and promote cultural pride among residents
+          and the global audience.
         </p>
         <p class="text-white">
-          Our vision is to become the leading digital archive for Abia State, fostering historical awareness, supporting research, and preserving cultural heritage for future generations.
+          Our vision is to become the leading digital archive for Abia State,
+          fostering historical awareness, supporting research, and preserving
+          cultural heritage for future generations.
         </p>
       </section>
 
       <!-- TEAM SECTION -->
       <section class="p-4">
         <h2 class="text-4xl font-serif font-bold mb-6">Meet the Team</h2>
-        <div class="flex gap-5 overflow-x-auto snap-x snap-mandatory py-5 scrollbar-thin scrollbar-thumb-amber-500 scrollbar-track-neutral-700 scroll-smooth">
-          <div class="w-80 flex-shrink-0 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg">
-            <img src="Images/me.png" class="w-full h-48 object-cover rounded-lg mb-3" alt="Emmanuel Kindness" />
-            <h3 class="text-xl font-bold text-amber-400 mb-2">Emmanuel Kindness</h3>
-            <p class="text-gray-300 text-sm mb-2">Lead Researcher & Historian</p>
-            <p class="text-white text-sm mb-2">Responsible for researching Abia’s history, verifying information, and curating content for the archive.</p>
+        <div
+          class="flex gap-5 overflow-x-auto snap-x snap-mandatory py-5 scrollbar-thin scrollbar-thumb-amber-500 scrollbar-track-neutral-700 scroll-smooth"
+        >
+          <div
+            class="w-80 flex-shrink-0 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="Images/me.png"
+              class="w-full h-48 object-cover rounded-lg mb-3"
+              alt="Emmanuel Kindness"
+            />
+            <h3 class="text-xl font-bold text-amber-400 mb-2">
+              Emmanuel Kindness
+            </h3>
+            <p class="text-gray-300 text-sm mb-2">
+              Lead Researcher & Historian
+            </p>
+            <p class="text-white text-sm mb-2">
+              Responsible for researching Abia’s history, verifying information,
+              and curating content for the archive.
+            </p>
             <div class="flex gap-2 mt-2">
               <a href="#" class="text-amber-400 hover:text-white">Twitter</a>
               <a href="#" class="text-amber-400 hover:text-white">LinkedIn</a>
             </div>
           </div>
 
-          <div class="w-80 flex-shrink-0 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg">
-            <img src="Images/CEO.jpg" class="h-48 object-cover rounded-lg mb-3" alt="Chibueze Ukaegbu" />
-            <h3 class="text-xl font-bold text-amber-400 mb-2">Chibueze Ukaegbu</h3>
+          <div
+            class="w-80 flex-shrink-0 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="Images/CEO.jpg"
+              class="h-48 object-cover rounded-lg mb-3"
+              alt="Chibueze Ukaegbu"
+            />
+            <h3 class="text-xl font-bold text-amber-400 mb-2">
+              Chibueze Ukaegbu
+            </h3>
             <p class="text-gray-300 text-sm mb-2">Project Mentor & CEO</p>
-            <p class="text-white text-sm mb-2">Guides the team on strategy, project management, and ensuring the platform’s goals align with educational objectives.</p>
+            <p class="text-white text-sm mb-2">
+              Guides the team on strategy, project management, and ensuring the
+              platform’s goals align with educational objectives.
+            </p>
             <div class="flex gap-2 mt-2">
               <a href="#" class="text-amber-400 hover:text-white">Twitter</a>
               <a href="#" class="text-amber-400 hover:text-white">LinkedIn</a>
             </div>
           </div>
 
-          <div class="w-80 flex-shrink-0 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg">
-            <img src="Images/Chibuzo.jpg" class="h-48 object-cover rounded-lg mb-3" alt="Chibuzo Ukaegbu" />
-            <h3 class="text-xl font-bold text-amber-400 mb-2">Chibuzo Ukaegbu</h3>
-            <p class="text-gray-300 text-sm mb-2">Developer & Community Engagement</p>
-            <p class="text-white text-sm mb-2">Builds and maintains the website, ensures smooth user experience, and connects with contributors to keep content updated.</p>
+          <div
+            class="w-80 flex-shrink-0 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="Images/Chibuzo.jpg"
+              class="h-48 object-cover rounded-lg mb-3"
+              alt="Chibuzo Ukaegbu"
+            />
+            <h3 class="text-xl font-bold text-amber-400 mb-2">
+              Chibuzo Ukaegbu
+            </h3>
+            <p class="text-gray-300 text-sm mb-2">
+              Developer & Community Engagement
+            </p>
+            <p class="text-white text-sm mb-2">
+              Builds and maintains the website, ensures smooth user experience,
+              and connects with contributors to keep content updated.
+            </p>
             <div class="flex gap-2 mt-2">
               <a href="#" class="text-amber-400 hover:text-white">GitHub</a>
               <a href="#" class="text-amber-400 hover:text-white">LinkedIn</a>
@@ -106,74 +219,164 @@
         <h2 class="text-4xl font-serif font-bold mb-4">Legacy & Importance</h2>
         <hr class="border-neutral-600 mb-4" />
         <p class="text-white mb-4">
-          Abia Archive celebrates the legacy of Abia State, from its early communities and Aro Confederacy history to modern developments in commerce, education, and governance. Through our curated articles, images, and resources, we aim to showcase the state’s evolution and inspire pride in its heritage.
+          Abia Archive celebrates the legacy of Abia State, from its early
+          communities and Aro Confederacy history to modern developments in
+          commerce, education, and governance. Through our curated articles,
+          images, and resources, we aim to showcase the state’s evolution and
+          inspire pride in its heritage.
         </p>
-        <p class="text-white">Visitors can explore sections on notable politicians, historical sites, cultural festivals, and economic achievements, reflecting a rich tapestry of Abia’s past and present.</p>
+        <p class="text-white">
+          Visitors can explore sections on notable politicians, historical
+          sites, cultural festivals, and economic achievements, reflecting a
+          rich tapestry of Abia’s past and present.
+        </p>
       </section>
 
       <!-- MAP SECTION -->
       <section class="p-4">
         <h2 class="text-4xl font-serif font-bold mb-6">Abia State Map</h2>
-        <iframe class="w-full h-96 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.555!2d7.491!3d5.531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5YyX5Lqs6Iqx!5e0!3m2!1sen!2sng!4v1234567890" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          class="w-full h-96 rounded-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.555!2d7.491!3d5.531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5YyX5Lqs6Iqx!5e0!3m2!1sen!2sng!4v1234567890"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
 
       <!-- ACHIEVEMENTS -->
       <section class="p-4">
         <h2 class="text-4xl font-serif font-bold mb-6">Achievements</h2>
         <ul class="list-disc list-inside text-white">
-          <li>Launched Abia Archive website in 2025 with over 500 curated articles.</li>
-          <li>Collaborated with local historians and educational institutions.</li>
-          <li>Hosted online workshops and webinars on Abia’s history and culture.</li>
-          <li>Received recognition from cultural associations for preserving heritage digitally.</li>
+          <li>
+            Launched Abia Archive website in 2025 with over 500 curated
+            articles.
+          </li>
+          <li>
+            Collaborated with local historians and educational institutions.
+          </li>
+          <li>
+            Hosted online workshops and webinars on Abia’s history and culture.
+          </li>
+          <li>
+            Received recognition from cultural associations for preserving
+            heritage digitally.
+          </li>
         </ul>
       </section>
 
       <!-- PARTNERS & SPOTLIGHT -->
       <section class="p-4 bg-neutral-900 rounded-lg">
-        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">Our Partner: LearnFactory</h2>
+        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">
+          Our Partner: LearnFactory
+        </h2>
         <hr class="border-neutral-600 mb-4" />
         <div class="flex flex-col md:flex-row items-center gap-6">
-          <img src="Images/logo.png" alt="LearnFactory Logo" class="w-48 h-48 object-contain rounded-lg shadow-lg" />
+          <img
+            src="Images/logo.png"
+            alt="LearnFactory Logo"
+            class="w-48 h-48 object-contain rounded-lg shadow-lg"
+          />
           <div class="text-white text-justify">
-            <p>LearnFactory Nigeria is a leading educational and mentorship platform that empowers young innovators, developers, and entrepreneurs. Through guidance, training, and real-world projects, LearnFactory fosters skills development and creativity in the tech and cultural sectors.</p>
-            <p class="mt-2">Our collaboration with LearnFactory has been instrumental in bringing Abia Archive to life. Their mentorship, resources, and support have helped our team develop a robust, user-friendly, and culturally rich platform that preserves the heritage of Abia State for future generations.</p>
-            <a href="https://learnfactory.ng" target="_blank" class="inline-block mt-4 px-6 py-3 bg-amber-500 text-black font-semibold rounded-lg hover:bg-amber-400">Visit LearnFactory</a>
+            <p>
+              LearnFactory Nigeria is a leading educational and mentorship
+              platform that empowers young innovators, developers, and
+              entrepreneurs. Through guidance, training, and real-world
+              projects, LearnFactory fosters skills development and creativity
+              in the tech and cultural sectors.
+            </p>
+            <p class="mt-2">
+              Our collaboration with LearnFactory has been instrumental in
+              bringing Abia Archive to life. Their mentorship, resources, and
+              support have helped our team develop a robust, user-friendly, and
+              culturally rich platform that preserves the heritage of Abia State
+              for future generations.
+            </p>
+            <a
+              href="https://learnfactory.ng"
+              target="_blank"
+              class="inline-block mt-4 px-6 py-3 bg-amber-500 text-black font-semibold rounded-lg hover:bg-amber-400"
+              >Visit LearnFactory</a
+            >
           </div>
         </div>
       </section>
 
       <section class="p-4 bg-neutral-900 rounded-lg">
-        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">TechRise Student Spotlight</h2>
+        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">
+          TechRise Student Spotlight
+        </h2>
         <hr class="border-neutral-600 mb-4" />
         <div class="flex flex-col md:flex-row items-center gap-6">
-          <img src="Images/me.png" alt="Emmanuel Kindness" class="w-48 h-48 object-cover rounded-lg shadow-lg" />
+          <img
+            src="Images/me.png"
+            alt="Emmanuel Kindness"
+            class="w-48 h-48 object-cover rounded-lg shadow-lg"
+          />
           <div class="text-white text-justify">
-            <p>Emmanuel Kindness, one of the core researchers behind Abia Archive, is a proud student of <span class="font-semibold text-amber-400">TechRise</span>. Through TechRise, Emmanuel has gained valuable skills in technology, research, and digital innovation, which have been essential in building and curating the content of this platform.</p>
-            <p class="mt-2">His journey exemplifies how mentorship and continuous learning can empower individuals to contribute meaningfully to community projects and digital heritage preservation.</p>
-            <p class="mt-2">Looking ahead, Emmanuel aspires to become a leading tech innovator and cultural preservation advocate. He plans to leverage technology to create digital solutions that not only document history but also educate and inspire the next generation. His vision includes developing platforms that connect communities, highlight local talents, and make Abia State’s rich culture accessible worldwide.</p>
-            <a href="https://techrise.ng" target="_blank" class="inline-block mt-4 px-6 py-3 bg-amber-500 text-black font-semibold rounded-lg hover:bg-amber-400">Visit TechRise</a>
+            <p>
+              Emmanuel Kindness, one of the core researchers behind Abia
+              Archive, is a proud student of
+              <span class="font-semibold text-amber-400">TechRise</span>.
+              Through TechRise, Emmanuel has gained valuable skills in
+              technology, research, and digital innovation, which have been
+              essential in building and curating the content of this platform.
+            </p>
+            <p class="mt-2">
+              His journey exemplifies how mentorship and continuous learning can
+              empower individuals to contribute meaningfully to community
+              projects and digital heritage preservation.
+            </p>
+            <p class="mt-2">
+              Looking ahead, Emmanuel aspires to become a leading tech innovator
+              and cultural preservation advocate. He plans to leverage
+              technology to create digital solutions that not only document
+              history but also educate and inspire the next generation. His
+              vision includes developing platforms that connect communities,
+              highlight local talents, and make Abia State’s rich culture
+              accessible worldwide.
+            </p>
+            <a
+              href="https://techrise.ng"
+              target="_blank"
+              class="inline-block mt-4 px-6 py-3 bg-amber-500 text-black font-semibold rounded-lg hover:bg-amber-400"
+              >Visit TechRise</a
+            >
           </div>
         </div>
       </section>
 
       <!-- PHILOSOPHY -->
       <section class="p-4 bg-neutral-900 rounded-lg">
-        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">Our Philosophy & Future Goals</h2>
+        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">
+          Our Philosophy & Future Goals
+        </h2>
         <hr class="border-neutral-600 mb-4" />
-        <p class="text-white text-justify">At Abia Archive, we believe that history should be accessible, engaging, and preserved for future generations. Our team is committed to using technology to bridge the gap between past and present.</p>
-        <p class="text-white text-justify mt-2">In the future, we aim to expand the platform by adding more interactive content, multimedia resources, and community engagement opportunities to make Abia’s heritage known worldwide.</p>
+        <p class="text-white text-justify">
+          At Abia Archive, we believe that history should be accessible,
+          engaging, and preserved for future generations. Our team is committed
+          to using technology to bridge the gap between past and present.
+        </p>
+        <p class="text-white text-justify mt-2">
+          In the future, we aim to expand the platform by adding more
+          interactive content, multimedia resources, and community engagement
+          opportunities to make Abia’s heritage known worldwide.
+        </p>
       </section>
 
       <!-- IMPACT COUNTERS -->
       <section class="p-4 text-center">
-        <h2 class="text-4xl font-serif font-bold mb-6 text-amber-400">Our Impact in Numbers</h2>
+        <h2 class="text-4xl font-serif font-bold mb-6 text-amber-400">
+          Our Impact in Numbers
+        </h2>
         <div class="grid md:grid-cols-3 gap-6">
           <div>
             <h3 class="text-5xl font-bold text-amber-400" id="articles">0</h3>
             <p class="text-white">Articles Published</p>
           </div>
           <div>
-            <h3 class="text-5xl font-bold text-amber-400" id="contributors">0</h3>
+            <h3 class="text-5xl font-bold text-amber-400" id="contributors">
+              0
+            </h3>
             <p class="text-white">Active Contributors</p>
           </div>
           <div>
@@ -185,40 +388,72 @@
 
       <!-- QUOTES SECTION -->
       <section class="w-full bg-neutral-900 py-16">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6"
+        >
           <div class="md:w-1/2 text-white">
-            <h2 class="text-5xl font-serif font-bold mb-6 text-amber-400">Voices of Inspiration</h2>
-            <div id="quote-text" class="text-2xl italic leading-relaxed">"Abia Archive brings history to life."</div>
-            <p id="quote-author" class="mt-4 text-amber-400 font-semibold text-xl">LearnFactory Mentor</p>
+            <h2 class="text-5xl font-serif font-bold mb-6 text-amber-400">
+              Voices of Inspiration
+            </h2>
+            <div id="quote-text" class="text-2xl italic leading-relaxed">
+              "Abia Archive brings history to life."
+            </div>
+            <p
+              id="quote-author"
+              class="mt-4 text-amber-400 font-semibold text-xl"
+            >
+              LearnFactory Mentor
+            </p>
           </div>
           <div class="md:w-1/2">
-            <img id="quote-image" src="Images/book.jpg" alt="Quote Person" class="w-full h-96 object-cover rounded-lg shadow-lg" />
+            <img
+              id="quote-image"
+              src="Images/book.jpg"
+              alt="Quote Person"
+              class="w-full h-96 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
 
       <!-- PROJECT TIMELINE -->
       <section class="p-4">
-        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">Project Timeline</h2>
-        <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-amber-500 scrollbar-track-neutral-700">
-          <div class="flex-shrink-0 w-64 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-serif font-bold mb-4 text-amber-400">
+          Project Timeline
+        </h2>
+        <div
+          class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-amber-500 scrollbar-track-neutral-700"
+        >
+          <div
+            class="flex-shrink-0 w-64 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg"
+          >
             <h3 class="text-xl text-amber-400 font-bold mb-2">2024</h3>
             <p class="text-white">Idea and research phase begins.</p>
           </div>
-          <div class="flex-shrink-0 w-64 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg">
+          <div
+            class="flex-shrink-0 w-64 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg"
+          >
             <h3 class="text-xl text-amber-400 font-bold mb-2">2025</h3>
-            <p class="text-white">Website development & launch of Abia Archive.</p>
+            <p class="text-white">
+              Website development & launch of Abia Archive.
+            </p>
           </div>
-          <div class="flex-shrink-0 w-64 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg">
+          <div
+            class="flex-shrink-0 w-64 snap-start bg-neutral-900 p-4 rounded-lg shadow-lg"
+          >
             <h3 class="text-xl text-amber-400 font-bold mb-2">2026</h3>
-            <p class="text-white">Expansion of articles, partners, and multimedia content.</p>
+            <p class="text-white">
+              Expansion of articles, partners, and multimedia content.
+            </p>
           </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-black/90 text-neutral-300 py-6 text-center">&copy; 2025 Abia Archive. All Rights Reserved.</footer>
+    <footer class="bg-black/90 text-neutral-300 py-6 text-center">
+      &copy; 2025 Abia Archive. All Rights Reserved.
+    </footer>
 
     <!-- SCRIPTS -->
     <script>
@@ -229,7 +464,7 @@
         { id: "partners", value: 2 },
       ];
 
-      counters.forEach(counter => {
+      counters.forEach((counter) => {
         let count = 0;
         const el = document.getElementById(counter.id);
         const interval = setInterval(() => {
@@ -242,8 +477,16 @@
 
       // Quote Rotation
       const quotes = [
-        { text: '"Abia Archive brings history to life."', author: "LearnFactory Mentor", img: "Images/book.jpg" },
-        { text: '"A platform that preserves our culture digitally."', author: "Emmanuel Kindness", img: "Images/me.png" }
+        {
+          text: '"Abia Archive brings history to life."',
+          author: "LearnFactory Mentor",
+          img: "Images/book.jpg",
+        },
+        {
+          text: '"A platform that preserves our culture digitally."',
+          author: "Emmanuel Kindness",
+          img: "Images/me.png",
+        },
       ];
       let current = 0;
       function showQuote(index) {
@@ -267,6 +510,19 @@
         showQuote(current);
       }, 8000);
     </script>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        if (menu.classList.contains("max-h-0")) {
+          menu.classList.remove("max-h-0");
+          menu.classList.add("max-h-[500px]", "py-6");
+        } else {
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-[500px]", "py-6");
+        }
+      });
+    </script>
   </body>
 </html>
-  
